@@ -1,0 +1,231 @@
+#root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+/* ***************************Album List*********************** */
+.navBar {
+  height: 70px;
+  background-color: #a0a0f9;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navBar > img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.albumList,
+.imageList {
+  width: 75%;
+  margin: 20px auto;
+  /* border: 0.5px solid black; */
+}
+
+.albumListHeader,
+.imageListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.addButton {
+  background-color: #e5f1ff;
+  color: #0077ff;
+  border: 2.5px solid #0077ff;
+}
+
+.cancelButton {
+  background-color: #ffe7e5;
+  color: #ff1300;
+  width: 80px;
+  border: 2.5px solid #ff1300;
+}
+
+/* ************************ Album Form ***********************/
+.albumForm {
+  width: 55%;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 30px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+
+.albumForm > input {
+  width: 68%;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+  padding: 2px 15px 2px 15px;
+  margin-right: 20px;
+}
+
+.albumForm > input:focus {
+  outline: 3px solid #0077ff;
+}
+
+.albumForm > h2 {
+  margin-top: 0;
+}
+.albumForm > button {
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+.clearBtn {
+  background-color: #ff1300;
+  margin-right: 15px;
+}
+.createBtn {
+  background-color: #0077ff;
+}
+
+/* ************************ Albums******************** */
+.albums,
+.images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.albums .card {
+  height: 160px;
+  width: 18%;
+  background-color: lightgray;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.albums .coverPhoto {
+  height: 75%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.albums .coverPhoto > img {
+  height: 50px;
+  /* border: 0.5px solid black; */
+}
+
+.albums .card:hover {
+  background-color: #0077ff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* *********************** Image List ******************** */
+.imageCard {
+  /* border: 0.5px solid black; */
+  position: relative;
+  font-weight: 300;
+  height: 160px;
+  width: 18%;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 9px -8px black, -2px 2px 9px -8px black;
+}
+
+.imageCoverPhoto {
+  height: 75%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.imageCoverPhoto > img {
+  height: 100%;
+}
+
+.imageListHeader .leftDiv {
+  /* border: 0.5px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.returnIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  box-shadow: 5px 5px 10px -10px black, -5px 5px 10px -10px black,
+    1px -1px 10px -10px black, -1px -1px 10px -10px black;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.returnIcon > img {
+  height: 30px;
+}
+
+.iconsContainer {
+  height: 35px;
+  width: 80px;
+  position: absolute;
+  top: -17px;
+  right: -15px;
+  display: flex;
+  gap: 10px;
+  visibility: hidden;
+}
+
+.imageCard:hover .iconsContainer {
+  visibility: visible;
+}
+
+.rightDiv {
+  /* border: 0.5px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.rightDiv > img {
+  height: 30px;
+  margin: 0 30px;
+}
+
+.rightDiv > input {
+  height: 35px;
+  width: 200px;
+  padding: 0 10px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

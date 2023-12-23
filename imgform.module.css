@@ -1,0 +1,58 @@
+.imgForm {
+  width: 55%;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 30px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: gray;
+  padding: 2px 15px 2px 15px;
+  margin: 12px 0;
+  /* border: 0.5px solid black; */
+}
+
+.input:focus {
+  outline: 3px solid #0077ff;
+}
+
+.h2 {
+  margin-top: 0;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.clearBtn {
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #ff1300;
+  margin-right: 15px;
+}
+.createBtn {
+  height: 40px;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #0077ff;
+}
